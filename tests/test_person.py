@@ -4,21 +4,21 @@ import pytest
 
 @pytest.fixture()
 def person():
-    return Person("John Doe", 21, jobs=["Software Developer"])
+    return Person("Test Name", 21, jobs=["Software Developer"])
 
 def test_init(person: Person):
-    assert person.name == "John Doe"
+    assert person.name == "Test Name"
     assert person.age == 21
     assert person.jobs == ["Software Developer"]
     
 def test_forename(person: Person):
-    assert person.forename == "John"
+    assert person.forename == "Test"
     
 def test_surname(person: Person):
-    assert person.surname == "Doe"
+    assert person.surname == "Name"
 
 def test_no_surname(person: Person):
-    person.name = "John"
+    person.name = "Test"
     assert not person.surname
     
 def test_celebrate_birthday(person: Person):
