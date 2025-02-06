@@ -18,7 +18,7 @@ def test_surname(person: Person):
     assert person.surname == "Name"
 
 def test_no_surname(person: Person):
-    person.name = "Name"
+    person.name = "Test"
     assert not person.surname
     
 def test_celebrate_birthday(person: Person):
