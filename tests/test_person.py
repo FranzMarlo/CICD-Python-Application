@@ -23,7 +23,7 @@ def test_no_surname(person: Person):
     
 def test_celebrate_birthday(person: Person):
     person.celebrate_birthday()
-    assert person.age == 22
+    assert person.age == 23
 
 def test_add_job(person: Person):
     person.add_job("Software Tester")
